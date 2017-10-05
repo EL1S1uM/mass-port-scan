@@ -3,7 +3,6 @@ Script to run a portscan by IPs list
 
 Top 32 ports Nmap for example use available on ports.txt
 
-PORT  SERVICE
 21    / ftp
 22    / ssh
 23    / telnet
