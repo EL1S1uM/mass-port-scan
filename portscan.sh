@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -x
 
 if [ $# != 2 ]
 then
@@ -30,7 +30,7 @@ do
         done
 done
 
-cat result.txt | grep 'open' | sort -u | cut -d ' ' -f 2,3,4,5 > open.txt && rm result.txt && rm aux.txt && rm aux2.txt
+cat result.txt | grep 'open' | sort -u | cut -d ' ' -f 2,3,4,5 > open.txt && rm result.txt aux.txt aux2.txt on.txt
 echo
 echo "IPs disponíveis em: open.txt"
 
