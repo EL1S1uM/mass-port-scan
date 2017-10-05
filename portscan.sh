@@ -8,6 +8,11 @@ else
 
 for i in $(cat $1)
 do
+        ping -c 1 $i | grep 'from' | cut -d ' ' -f 4 | sed 's/://' >> on.txt
+done
+
+for i in $(cat on.txt)
+do
         for y in $(cat $2)
         do
                 netcat -vnz -w 1 $i $y &>> result.txt
