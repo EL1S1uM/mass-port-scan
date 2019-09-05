@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ $# != 2 ]; then
-        echo "### Mass PortScan by EL1S1uM ###"
+        echo "### Mass PortScan by felipesi - 2017 ###"
         echo "Uso: $0 ips.txt ports.txt"
 else
 
